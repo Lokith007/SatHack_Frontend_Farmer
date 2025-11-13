@@ -122,10 +122,7 @@ export default function Settings() {
       </section>
 
       {/* Developer Credit */}
-      <section className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-6 shadow-lg text-white text-center">
-        <p>{t('developerCredit')}</p>
-        <p className="text-sm opacity-90 mt-2">v1.0.0 - Farmer Assistant</p>
-      </section>
+     
     </div>
   );
 }
