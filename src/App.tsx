@@ -16,7 +16,7 @@ export default function App() {
       <SettingsProvider>
         <SensorProvider>
           <Router>
-            <div className="min-h-screen bg-[#FFF8E7] pb-20">
+            <div className="min-h-screen bg-[#FFF8E7] pb-24">
               <Routes>
                 <Route path="/" element={<Navigate to="/dashboard" replace />} />
                 <Route path="/dashboard" element={<Dashboard />} />
@@ -25,6 +25,7 @@ export default function App() {
                 <Route path="/weather" element={<Weather />} />
                 <Route path="/settings" element={<Settings />} />
               </Routes>
+              {/* BottomNav will always stay fixed at the bottom */}
               <BottomNav />
             </div>
           </Router>

@@ -79,36 +79,7 @@ export default function Settings() {
       </section>
 
       {/* Offline Mode */}
-      <section className="bg-white rounded-2xl p-6 shadow-md">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            {offlineMode ? (
-              <WifiOff className="w-6 h-6 text-gray-600" />
-            ) : (
-              <Wifi className="w-6 h-6 text-green-600" />
-            )}
-            <div>
-              <h3 className="text-gray-700">{t('offlineMode')}</h3>
-              <p className="text-sm text-gray-500">
-                {offlineMode ? 'Using cached data' : 'Live data updates'}
-              </p>
-            </div>
-          </div>
-          
-          <button
-            onClick={handleOfflineModeToggle}
-            className={`relative w-14 h-8 rounded-full transition-colors ${
-              offlineMode ? 'bg-gray-400' : 'bg-green-500'
-            }`}
-          >
-            <div
-              className={`absolute top-1 w-6 h-6 bg-white rounded-full transition-transform ${
-                offlineMode ? 'left-1' : 'left-7'
-              }`}
-            />
-          </button>
-        </div>
-      </section>
+      
 
       {/* Last Sync */}
       <section className="bg-white rounded-2xl p-6 shadow-md">
